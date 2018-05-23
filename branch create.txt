@@ -1,0 +1,431 @@
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ pwd
+/c/Users/kayum/Desktop
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ ls
+ begum.pdf       code2        'Eclipse Jee Oxygen.lnk'*   kayum05/
+ Brackets.lnk*   code2.html    gittest/                   statement.txt
+ code1.html      desktop.ini   java.txt                   WhatsApp.lnk*
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ mkdir gittest
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ git config user.name "kayum77"
+fatal: not in a git directory
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ cd gittest
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest
+$ clear
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest
+$ pwd
+/c/Users/kayum/Desktop/gittest
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest
+$ cd gittest
+bash: cd: gittest: No such file or directory
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest
+$ pwd
+/c/Users/kayum/Desktop/gittest
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest
+$ ls
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest
+$ git init
+Initialized empty Git repository in C:/Users/kayum/Desktop/gittest/.git/
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git clone https://github.com/kayum77/kaayum05.git
+Cloning into 'kaayum05'...
+warning: You appear to have cloned an empty repository.
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+kaayum05/
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git add --all
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   hello.txt
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git commit -m "test"
+[master (root-commit) da34500] test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ pwd
+/c/Users/kayum/Desktop/gittest
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ touch test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/  test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git add --all
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git commit -m "test message"
+[master 9307d71] test message
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git remote add https://github.com/kayum77/kaayum05.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/  test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ cd ..
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ ls
+ begum.pdf       code2        'Eclipse Jee Oxygen.lnk'*   statement.txt
+ Brackets.lnk*   code2.html    gittest/                   WhatsApp.lnk*
+ code1.html      desktop.ini   java.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ cd..
+bash: cd..: command not found
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ ls
+ begum.pdf       code2        'Eclipse Jee Oxygen.lnk'*   statement.txt
+ Brackets.lnk*   code2.html    gittest/                   WhatsApp.lnk*
+ code1.html      desktop.ini   java.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ pwd
+/c/Users/kayum/Desktop
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop
+$ cd gittest/
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/  test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/  test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/  test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ mkdir test
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ ls
+hello.txt  kaayum05/  test/  test.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest (master)
+$ cd test
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test (master)
+$ ls
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test (master)
+$ pwd
+/c/Users/kayum/Desktop/gittest/test
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test (master)
+$ ls
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test (master)
+$ git clone https://github.com/kayum77/lastrepo.git
+Cloning into 'lastrepo'...
+warning: You appear to have cloned an empty repository.
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test (master)
+$ ls
+lastrepo/
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test (master)
+$ cd lastrepo/
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ touch file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ ls
+file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ git add --all
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   file.txt
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ git commit -m "testtest"
+[master (root-commit) da9acac] testtest
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ git push
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 207 bytes | 103.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kayum77/lastrepo.git
+ * [new branch]      master -> master
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ touch file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ git branch
+* master
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ git checkout -b"test branch"
+fatal: 'test branch' is not a valid branch name.
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (master)
+$ git checkout -b "test_branch"
+Switched to a new branch 'test_branch'
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ git branch
+  master
+* test_branch
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ ls
+file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ nano file
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ nano file
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ nano file
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ nano file
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ nano file
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ ls
+file  file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ cat file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ nano file
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ nano file.txt
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ cat file.txt
+hello world
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ git status
+On branch test_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ git add --all
+warning: LF will be replaced by CRLF in file.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in file.
+The file will have its original line endings in your working directory.
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ git status
+On branch test_branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   file
+        modified:   file.txt
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ git commit -m" commit message push"
+[test_branch 7f428f6]  commit message push
+ 2 files changed, 3 insertions(+)
+ create mode 100644 file
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ git status
+On branch test_branch
+nothing to commit, working tree clean
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$ git push
+fatal: The current branch test_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin test_branch
+
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$   git push --set-upstream origin test_branch
+
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 301 bytes | 150.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/kayum77/lastrepo.git
+ * [new branch]      test_branch -> test_branch
+Branch 'test_branch' set up to track remote branch 'test_branch' from 'origin'.
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$
+
+kayum@DESKTOP-NQ3KI8G MINGW64 ~/Desktop/gittest/test/lastrepo (test_branch)
+$

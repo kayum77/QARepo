@@ -1,0 +1,124 @@
+Modifier : Modifier in Java is a keyword placed in Class, Variable and Method declaration that changes how it operates.
+
+Access Modifier: Access Modifier give us access level of class, variable and method.
+
+1.Default : Default access modifier means we donot explicitly(clearly) declare an access modifier for a class, field, method, etc.
+
+// Default modifier  canbe accessed @within class and @within package
+//Default modifier cannot be accessed by inherite or by object creation
+
+2.Public:A class, method,constructor etc declared public can be accessed from any other class.
+//Public access modifier can be accessed @ within class@within package@inherite(outside package subclass)@object create
+
+3.Private:
+Class - class cannot be declared as private.
+Methods, variables, and constructors that are declared private can only be accessed within the declared class itself.
+
+Variable - Variables that are declared private can be accessed outside the class by applying getter and setter method.
+get means read and set means write.
+
+//private modifier cannot accessed @within package or @by inherite or @by object creation.
+
+4.Protected: Variables, methods, and constructors, which are declared protected in a superclass can be accessed only by the subclassese(by Inheritance) in other package or any class within the package of the protected members' class.
+- cannot access by object creation.
+- Class cannot be protected.
+
+Access Modifier:
+* Top class only public and default.
+* Methods declared public in a superclass also must be public in all subclasses.
+
+
+
+
+NonAccess Modifier: Java provides a number of non-access modifiers to achieve many other functionalities.
+
+*The static modifier for creating class methods and variables.
+*The final modifier for finalizing the implementations of classes, methods, and variables.
+*The abstract modifier for creating abstract classes and methods.
+
+1. Static Modifier :  A class cannot static. Static always works with changed values, it never go back to the original once we changed the value.
+Variable- Static variable make the programme memory efficient.(saves memory).
+When a variable declare with static keyword in a class level called class variable.
+A variable declare without static keyword callled instance variable.
+We can call any static object in the project by class name.
+method- If we declare a method as a static we can Overload but cannot override.
+Static cannot work with nonStatic but nonstatic can work with static.
+
+2. Final Modifier:
+
+Final class : A class declare as final cannot be inheritance by another subclass. Only create a object of that class and call.
+If a class is final and all properties are final variable and methods that class is called immutable(Cannot be changed)
+
+Final variable : A final variable explicitley initialized just once. (We can use it but canot change the value).Should be initialized before use them.
+
+Final method: A final method cannot Overridden by any subclass(Inherite) but can overload.The main intention of making a method final would be that the content of the method should not be changed by any outsider.
+
+3. Abstract Modifier:
+
+Abstract class: If we declare class as a abstract we cannot create an object but inherite.
+Abstract class contains both abstract and non abstract method.
+When we inherite an abstract class we must implement all unimplemented method.
+
+Abstract method:An abstract method is a method declared without any implementation. The methods body (implementation) is provided by the subclass. Abstract methods can never be final or static.
+
+
+1. What’s the purpose of Static methods and static variables?
+
+Ans: When there is a requirement to share a method or a variable between multiple objects of a class instead of creating separate copies for each object, we use static keyword to make a method or variable shared for all objects.
+
+2.Can we call a non-static method from inside a static method?
+
+Ans: Non-Static methods are owned by objects of a class and have object level scope and in order to call the non-Static methods from a static block (like from a static main method), an object of the class needs to be created first. Then using object reference, these methods can be invoked.
+
+3. What’s the benefit of using inheritance?
+
+Ans: Key benefit of using inheritance is reusability of code as inheritance enables sub-classes to reuse the code of its super class. Polymorphism (Extensibility ) is another great benefit which allow new functionality to be introduced without effecting existing derived classes.
+Even if no explicit constructor is defined in a java class, objects get created successfully as a default  constructor is implicitly used for object creation. This constructor has no parameters.
+
+4. Can we call the constructor of a class more than once for an object?
+
+Ans:  Constructor is called automatically when we create an object using new keyword. It’s called only once for an object at the time of object creation and hence, we can’t invoke the constructor again for an object after its creation.
+
+5.How objects of a class are created if no constructor is defined in the class?
+
+Ans: Even if no explicit constructor is defined in a java class, objects get created successfully as a default  constructor is implicitly used for object creation. This constructor has no parameters.
+
+6.When the constructor of a class is invoked?
+
+Ans: The constructor of a class is invoked every time an object is created with new keyword.
+Can we declare the main method of our class as private?
+
+Ans: In java, main method must be public static in order to run any application correctly. If main method is declared as private, developer won’t get any compilation error however, it will not get executed and will give a runtime error.
+
+7.What is Final Keyword in Java? Give an example.
+
+Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after assignment, value of a constant can’t be changed.
+In below example, a constant with the name const_val is declared and assigned avalue:
+Private Final int const_val=100
+When a method is declared as final,it can NOT  be overridden by the subclasses.This method are faster than any other method,because they are resolved at complied time.
+When a class is declares as final,it cannot be subclassed. Example String,Integer and other wrapper classes.
+
+Interview Questions:
+1. Why is Java for Selenium?
+
+*We have good support for Selenium with Java
+*Majority of Users use Java in today's market
+* Java is a platfarm of Independent language.(We can write and compile code in one platfarm like windows and can be execute the class files to supported any platfarm like linux, solaris)
+
+2. Why Eclipse for selenium?
+Eclipse is an IDE(Integrated Development Environment). An IDE normally consists of a source code editor, build automation tools and a debugger.
+The usage of an IDE (like Eclipse) in Automation Testing is to build framework libraries and modules that are easily accessible and provides a better view of the project-framework.
+Besides they help us to write unit test cases for testing out our code. 
+
+3. Why Eclipse for java?
+Eclipse is an integrated development environment (IDE) used in computer programming, and is the most widely used Java IDE. It contains a base workspace and an extensible plug-in system for customizing the environment.
+
+4.Difference between primitive and refernce data type?
+
+*The main difference between primitive and reference type is that  -
+primitive type always has a value, it can never be null but
+reference type can be null, which denotes the absence of value.
+So if you create a primitive variable of type int and forget to initialize it then it's value would be 0, the default value of integral type in Java, but a reference variable by default has a null value, which means no reference is assigned to it.
+
+*primitive types store actual values but reference type stores handle to object in the heap
+

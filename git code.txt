@@ -1,21 +1,23 @@
-git init: Initializes a new Git repository. Until you run this command inside a repository or directory, itís just a regular folder. Only after you input this does it accept further Git commands.
+git codes -
 
-git config: Short for ìconfigure,î this is most useful when youíre setting up Git for the first time.
+git init: Initializes a new Git repository. Until you run this command inside a repository or directory, it‚Äôs just a regular folder. Only after you input this does it accept further Git commands.
 
-git help: Forgot a command? Type this into the command line to bring up the 21 most common git commands. You can also be more specific and type ìgit help initî or another term to figure out how to use and configure a specific git command.
+git config: Short for ‚Äúconfigure,‚Äù this is most useful when you‚Äôre setting up Git for the first time.
 
-git status: Check the status of your repository. See which files are inside it, which changes still need to be committed, and which branch of the repository youíre currently working on.
+git help: Forgot a command? Type this into the command line to bring up the 21 most common git commands. You can also be more specific and type ‚Äúgit help init‚Äù or another term to figure out how to use and configure a specific git command.
 
-git add: This does not add new files to your repository. Instead, it brings new files to Gitís attention. After you add files, theyíre included in Gitís ìsnapshotsî of the repository.
+git status: Check the status of your repository. See which files are inside it, which changes still need to be committed, and which branch of the repository you‚Äôre currently working on.
 
-git commit: Gitís most important command. After you make any sort of change, you input this in order to take a ìsnapshotî of the repository. Usually it goes git commit -m ìMessage here.î The -m indicates that the following section of the command should be read as a message.
+git add: This does not add new files to your repository. Instead, it brings new files to Git‚Äôs attention. After you add files, they‚Äôre included in Git‚Äôs ‚Äúsnapshots‚Äù of the repository.
 
-git branch: Working with multiple collaborators and want to make changes on your own? This command will let you build a new branch, or timeline of commits, of changes and file additions that are completely your own. Your title goes after the command. If you wanted a new branch called ìcats,î youíd type git branch cats.
+git commit: Git‚Äôs most important command. After you make any sort of change, you input this in order to take a ‚Äúsnapshot‚Äù of the repository. Usually it goes git commit -m ‚ÄúMessage here.‚Äù The -m indicates that the following section of the command should be read as a message.
 
-git checkout: Literally allows you to ìcheck outî a repository that you are not currently inside. This is a navigational command that lets you move to the repository you want to check. You can use this command as git checkout master to look at the master branch, or git checkout cats to look at another branch.
+git branch: Working with multiple collaborators and want to make changes on your own? This command will let you build a new branch, or timeline of commits, of changes and file additions that are completely your own. Your title goes after the command. If you wanted a new branch called ‚Äúcats,‚Äù you‚Äôd type git branch cats.
 
-git merge: When youíre done working on a branch, you can merge your changes back to the master branch, which is visible to all collaborators. git merge cats would take all the changes you made to the ìcatsî branch and add them to the master.
+git checkout: Literally allows you to ‚Äúcheck out‚Äù a repository that you are not currently inside. This is a navigational command that lets you move to the repository you want to check. You can use this command as git checkout master to look at the master branch, or git checkout cats to look at another branch.
 
-git push: If youíre working on your local computer, and want your commits to be visible online on GitHub as well, you ìpushî the changes up to GitHub with this command.
+git merge: When you‚Äôre done working on a branch, you can merge your changes back to the master branch, which is visible to all collaborators. git merge cats would take all the changes you made to the ‚Äúcats‚Äù branch and add them to the master.
 
-git pull: If youíre working on your local computer and want the most up-to-date version of your repository to work with, you ìpullî the changes down from GitHub with this command.
+git push: If you‚Äôre working on your local computer, and want your commits to be visible online on GitHub as well, you ‚Äúpush‚Äù the changes up to GitHub with this command.
+
+git pull: If you‚Äôre working on your local computer and want the most up-to-date version of your repository to work with, you ‚Äúpull‚Äù the changes down from GitHub with this command.

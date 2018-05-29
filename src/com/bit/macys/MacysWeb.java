@@ -3,6 +3,7 @@ package com.bit.macys;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// open blank browser
 public class MacysWeb {
 	
 	
